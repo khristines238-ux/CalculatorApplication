@@ -112,8 +112,9 @@
             this.btnEqual.TabIndex = 7;
             this.btnEqual.Text = "Calculate";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.BtnEqual_Click);
             // 
-            // Form1
+            // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,7 +128,7 @@
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.lblSecondNumber);
             this.Controls.Add(this.lblFirstNumber);
-            this.Name = "Form1";
+            this.Name = "FrmCalculator";
             this.Text = "FrmCalculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -145,6 +146,8 @@
         private System.Windows.Forms.TextBox txtBoxInput2;
         private System.Windows.Forms.Label lblDisplayTotal;
         private System.Windows.Forms.Button btnEqual;
+
+       
+        }
     }
-}
 

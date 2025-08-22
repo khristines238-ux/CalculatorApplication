@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CalculatorApplication
 {
     public delegate T Formula<T>(T arg1, T arg2);
@@ -12,7 +13,7 @@ namespace CalculatorApplication
     {
         public Formula<double> formula;
 
-        private Formula<double> calculateEvent;
+        public Formula<double> calculateEvent;
         public event Formula<double> CalculateEvent
         {
             add
